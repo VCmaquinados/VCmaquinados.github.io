@@ -1,0 +1,79 @@
+/* General */
+body {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  margin-top: 70px;          /* espacio para navbar fijo */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;          /* para mantener el footer al final */
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-link {
+  font-weight: 500;
+}
+
+/* Section titles */
+section h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Listas de clientes */
+#clientes ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#clientes ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Carousel - mostrar imagen completa */
+#carouselClientes .carousel-item img {
+  width: 100%;
+  height: 400px;           /* altura fija */
+  object-fit: contain;     /* muestra la imagen completa */
+  border-radius: 8px;
+  background-color: #f8f9fa; /* color de fondo para espacios vacíos */
+}
+
+/* Contacto */
+#contacto {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+#contacto p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  margin-top: auto; /* asegura que esté al final */
+  padding: 1rem 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #carouselClientes .carousel-item img {
+    height: 250px;        /* altura fija menor en móvil */
+  }
+  #clientes ul li {
+    font-size: 0.95rem;
+  }
+  #contacto p {
+    font-size: 0.95rem;
+  }
+}

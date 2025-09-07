@@ -1,0 +1,108 @@
+/* General */
+body {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+  margin-top: 70px; /* espacio para navbar fijo */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-link {
+  font-weight: 500;
+}
+
+/* Section titles */
+section h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Listas del equipo */
+ul {
+  padding-left: 0;
+}
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Carousel de equipo */
+#carouselEquipo .carousel-item img {
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Trabajos: cards */
+#trabajos .card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+#trabajos .card:hover {
+  transform: translateY(-5px);
+}
+#trabajos .card-img-top {
+  height: 250px;
+  object-fit: contain;
+  background-color: #fff;
+}
+#trabajos .card-body {
+  text-align: center;
+}
+#trabajos .card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Modales de trabajos */
+.modal-body img {
+  max-height: 400px;
+  width: auto;
+  object-fit: contain;
+}
+.modal-content {
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  margin-top: auto; /* mantener al final */
+  padding: 1rem 0;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  #trabajos .card-img-top {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  #carouselEquipo .carousel-item img {
+    max-height: 250px;
+  }
+  ul li {
+    font-size: 0.9rem;
+  }
+  #trabajos .card-img-top {
+    height: 180px;
+  }
+}
+@media (max-width: 576px) {
+  #trabajos .card-img-top {
+    height: 150px;
+  }
+}
