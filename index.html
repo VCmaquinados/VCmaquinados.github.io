@@ -7,7 +7,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS específico para index -->
-    <link rel="stylesheet" href="styles_index.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
@@ -21,27 +22,176 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="equipo_y_trabajos.html">Equipo y Trabajos</a></li>
-            <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Home -->
-    <header id="home" class="vh-100 d-flex align-items-center justify-content-center text-center text-light bg-dark">
-      <div class="container">
-        <h1 class="display-4">VC Maquinados</h1>
-        <p class="lead">"Tools for Industry"</p>
-        <p>Soluciones en manufactura, maquinados y servicios integrales.</p>
-      </div>
-    </header>
+<!-- Home con carrusel -->
+<header id="home" class="vh-100 d-flex align-items-center justify-content-center text-center text-light bg-dark">
+  <div id="carouselHeader" class="carousel slide carousel-fade w-100 h-100" data-bs-ride="carousel">
+    <div class="carousel-inner h-100">
 
-    <!-- Remembranza -->
-    <section id="remembranza" class="py-5">
-      <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+      <!-- Imagen 1 -->
+      <div class="carousel-item active h-100">
+        <img src="img/home/fondo.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Imagen 1">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <h1 class="display-4 fw-bold">VC Maquinados</h1>
+          <p class="lead">"Tools for Industry"</p>
+          <p>Soluciones en manufactura, maquinados y servicios integrales.</p>
+        </div>
+      </div>
+
+      <!-- Imagen 2 -->
+      <div class="carousel-item h-100">
+        <img src="img/home/cnc.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Imagen 2">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <h1 class="display-4 fw-bold">Maquinados CNC</h1>
+          <p class="lead">Precisión y calidad en cada pieza.</p>
+        </div>
+      </div>
+
+      <!-- Imagen 3 -->
+      <div class="carousel-item h-100">
+        <img src="img/home/master.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Imagen 3">
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+          <h1 class="display-4 fw-bold">Mantenimiento y Programación</h1>
+          <p class="lead">Soluciones industriales a la medida.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</header>
+
+
+<!-- Remembranza -->
+<section id="remembranza" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Imagen a la izquierda -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <img src="img/puebla.png" class="img-fluid rounded shadow" alt="Imagen de Puebla">
+          <p class="mt-2 fw-bold" >Actual mente nos ubicamos en el estado de puebla</p>
+      </div>
+      
+      <!-- Texto a la derecha -->
+      <div class="col-md-6 d-flex flex-column justify-content-center text-center text-md-start">
         <h2 class="mb-4">Remembranza</h2>
         <p>VC Maquinados, es una empresa de manufactura industrial la cual surge con la finalidad de ofrecer servicios a empresas, con necesidades y demanda en cuanto a maquinados, mantenimientos y/o servicios integrales.</p>
         <p>Somos una empresa con experiencia y capacidad para ofrecer soluciones a las necesidades de nuestros clientes.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-5">
+      <div class="container d-flex flex-column justify-content-center align-items-center text-center">
+        <h2 class="mb-4">Nuestros Servicios</h2>
+        <div class="row w-100">
+
+          <!-- Servicio 1 -->
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Maquinados CNC</h5>
+                  <p class="card-text">Fresa, torno, rectificado y más.</p>
+                </div>
+                <a href="equipo_y_trabajos.html#trabajos" class="btn btn-primary mt-3">Ver Trabajos</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 2 -->
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Mantenimiento</h5>
+                  <p class="card-text">Cilindros neumáticos y equipos mecánicos.</p>
+                </div>
+                <a href="equipo_y_trabajos.html#mantenimiento" class="btn btn-primary mt-3">Ver Trabajos</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Servicio 3 -->
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Programación Mastercam</h5>
+                  <p class="card-text">Diseño y programación de piezas.</p>
+                </div>
+                <a href="equipo_y_trabajos.html#mastercam" class="btn btn-primary mt-3">Ver Trabajos</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+        <!-- Clientes -->
+    <section id="clientes" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Nuestros Clientes</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <ul class="list-unstyled fs-5">
+              <li>✔️ Arce Tools</li>
+              <li>✔️ FFT</li>
+              <li>✔️ Avirex</li>
+              <li>✔️ Fori Automation</li>
+              <li>✔️ GLM Components</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div id="carouselClientes" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                  <img src="img/clientes/arce.png" class="d-block w-100 rounded shadow" alt="Arce Tools">
+                  <p class="mt-2 fw-bold">Arce Tools</p>
+                </div>
+                <div class="carousel-item text-center">
+                  <img src="img/clientes/FFT.jpeg" class="d-block w-100 rounded shadow" alt="FFT">
+                  <p class="mt-2 fw-bold">FFT</p>
+                </div>
+                <div class="carousel-item text-center">
+                  <img src="img/clientes/avirex.png" class="d-block w-100 rounded shadow" alt="Avirex">
+                  <p class="mt-2 fw-bold">Avirex</p>
+                </div>
+                 <div class="carousel-item text-center">
+                  <img src="img/clientes/fori.png" class="d-block w-100 rounded shadow" alt="Fori">
+                  <p class="mt-2 fw-bold">Fori Automation</p>
+                </div>
+                   <div class="carousel-item text-center">
+                  <img src="img/clientes/glm.png" class="d-block w-100 rounded shadow" alt="GLM">
+                  <p class="mt-2 fw-bold">GLM Components</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselClientes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselClientes" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -85,53 +235,48 @@
       </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="py-5">
-      <div class="container d-flex flex-column justify-content-center align-items-center text-center">
-        <h2 class="mb-4">Nuestros Servicios</h2>
-        <div class="row w-100">
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Maquinados CNC</h5>
-                <p class="card-text">Fresa, torno, rectificado y más.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Mantenimiento</h5>
-                <p class="card-text">Cilindros neumáticos y equipos mecánicos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Programación Mastercam</h5>
-                <p class="card-text">Diseño y programación de piezas.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
+<!-- Footer con Contacto usando Flex -->
+<footer class="bg-dark text-light py-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start gap-4">
+    
     <!-- Contacto -->
-    <section id="contacto" class="py-5">
-      <div class="container d-flex flex-column justify-content-center align-items-center text-center">
-        <h2 class="mb-4">Contáctanos</h2>
-        <p><strong>Correo:</strong> luisvarela2010@hotmail.com / maquinados.leo80@gmail.com</p>
-        <p><strong>Facebook:</strong> Vcmaquinados</p>
-        <p><strong>Teléfono:</strong> 044 222 446 4808 / 01 (222) 285 5051</p>
-      </div>
-    </section>
+    <div class="flex-fill">
+      <h5>Contacto</h5>
+      <p class="mb-1"><strong>Correo 1:</strong> luisvarela2010@hotmail.com</p>
+      <p class="mb-1"><strong>Correo 2:</strong> maquinados.leo80@gmail.com</p>
+      <p class="mb-1"><strong>Teléfono 1:</strong> 044 222 446 4808</p>
+      <p class="mb-1"><strong>Teléfono 2:</strong> 01 (222) 285 5051</p>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light text-center py-3">
-      <p class="mb-0">&copy; 2025 VC Maquinados - Todos los derechos reservados</p>
-    </footer>
+    <!-- Redes Sociales -->
+    <div class="flex-fill">
+      <h5>Redes Sociales</h5>
+       <p class="mb-1">
+        <a href="https://www.facebook.com/share/1Rcz3pgY6s/?mibextid=wwXIfr" target="_blank" class="text-light text-decoration-none">
+          Facebook: VC Maquinados
+        </a>
+      </p>
+    </div>
+
+    <!-- Ubicación -->
+    <div class="flex-fill">
+      <h5>Ubicación</h5>
+      <p class="mb-1">
+      <a href="https://www.google.com/maps/place/Av.+Solares+85,+Barrio+del+Alto,+72700+San+Juan+Cuautlancingo,+Pue./@19.0911315,-98.2824291,17z/data=!3m1!4b1!4m6!3m5!1s0x85cfc676cbbd9943:0x3ac3f323423c1c8f!8m2!3d19.0911264!4d-98.2798542!16s%2Fg%2F11x0dl_vn4?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-light text-decoration-none">
+        5 Av. Solares San Juan Cuautlancingo, Puebla</p>
+    </div>
+  </div>
+
+  <hr class="bg-light my-4">
+
+  <!-- Derechos reservados -->
+  <div class="text-center">
+    <p class="mb-0">&copy; 2025 VC Maquinados</p>
+  </div>
+</footer>
+
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

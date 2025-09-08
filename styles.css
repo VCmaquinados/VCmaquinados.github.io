@@ -1,54 +1,207 @@
-/* General */
+/* =========================
+   Tipografía y Body
+========================= */
 body {
   scroll-behavior: smooth;
-  font-family: Arial, sans-serif;
-  margin-top: 70px; /* espacio para navbar fija */
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #f4f4f9;
 }
 
-/* Header */
-header {
-  background: url('img/fondo.jpg') no-repeat center center/cover;
+/* =========================
+   Navbar
+========================= */
+.navbar {
+  background-color: #1a1a1a !important;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.navbar .nav-link {
   color: #fff;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
-/* Navbar */
+.navbar .nav-link:hover {
+  color: #ffd700;
+}
+
 .navbar-brand {
-  font-weight: bold;
+  font-weight: 700;
+  color: #ffd700 !important;
   text-transform: uppercase;
 }
-.navbar-nav .nav-link {
-  font-weight: 500;
+
+/* =========================
+   Carrusel Header
+========================= */
+header .carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+  filter: brightness(60%);
 }
 
-/* Section titles */
-section h2 {
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+header .carousel-caption {
+  z-index: 2;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
 }
 
-/* Cards (Misión, Visión, Valores y Servicios) */
-.card h5.card-title {
-  font-weight: 600;
-}
-.card-text {
-  font-size: 0.95rem;
+header h1 {
+  font-size: 3rem;
+  color: #ffd700;
 }
 
-/* Footer */
-footer {
-  font-size: 0.9rem;
-  background-color: #222;
+header p.lead {
+  font-size: 1.5rem;
   color: #fff;
-  text-align: center;
 }
 
-/* Ajustes responsivos */
+/* =========================
+   Sección Remembranza
+========================= */
+#remembranza img {
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+#remembranza img:hover {
+  transform: scale(1.05);
+}
+
+#remembranza h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+#remembranza p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   Sección Servicios
+========================= */
+#servicios h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+#servicios .card {
+  border: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#servicios .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+#servicios .btn-primary {
+  background: linear-gradient(45deg, #ffd700, #ff8c00);
+  border: none;
+}
+
+#servicios .btn-primary:hover {
+  background: linear-gradient(45deg, #ff8c00, #ffd700);
+}
+
+/* =========================
+   Sección Clientes
+========================= */
+#clientes h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+#clientes ul li {
+  margin-bottom: 0.7rem;
+  font-size: 1.15rem;
+  color: #444;
+}
+
+#carouselClientes .carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s;
+}
+
+#carouselClientes .carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Sección Objetivos
+========================= */
+#objetivos h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+#objetivos .card {
+  border: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+#objetivos .card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background-color: #111;
+  color: #fff;
+}
+
+footer h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+footer a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+/* =========================
+   Responsivo
+========================= */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
   }
-  .card-text {
-    font-size: 0.9rem;
+  header p.lead {
+    font-size: 1.2rem;
+  }
+  #clientes ul li, #remembranza p {
+    font-size: 1rem;
+  }
+  #servicios .card {
+    margin-bottom: 1.5rem;
+  }
+  #carouselClientes .carousel-item img {
+    height: 250px;
   }
 }
