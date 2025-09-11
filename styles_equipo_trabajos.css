@@ -82,6 +82,19 @@ body {
   box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
 
+@media (max-width: 768px) {
+  #carouselEquipo .carousel-item img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselEquipo .carousel-item img {
+    height: 200px;
+  }
+}
+
+
 /* =========================
    Tarjetas (Trabajos, Mantenimiento y Mastercam)
 ========================= */
