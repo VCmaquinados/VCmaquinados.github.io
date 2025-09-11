@@ -184,6 +184,14 @@ footer a:hover {
   color: #ffd700;
   text-decoration: underline;
 }
+footer .flex-fill {
+  flex: 1 1 250px; /* columna mínima 250px, se expande */
+}
+
+footer p, footer a {
+  margin-bottom: 0.5rem;
+}
+
 
 /* =========================
    Responsivo
