@@ -94,16 +94,24 @@
           </div>
 
           <!-- Modal Trabajo 1 -->
-          <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+          <div class="modal fade" id="modal1" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Trabajo de maquinado de piezas grandes</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <div class="modal-header"><h5 class="modal-title">Maquinado de piezas grandes</h5>
+                  <button class="btn-close" data-bs-dismiss="modal"></button></div>
                 <div class="modal-body text-center">
-                  <img src="img/piezas/grandes/pc2.jpg" class="img-fluid rounded mb-3" alt="Trabajo 1">
-                  <p>Maquinado de piezas de grandes dimensiones</p>
+                  <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active"><img src="img/piezas/grandes/pc1.jpg" class="d-block w-100"></div>
+                      <div class="carousel-item"><img src="img/piezas/grandes/pc2.jpg" class="d-block w-100"></div>
+                      <div class="carousel-item"><img src="img/piezas/grandes/" class="d-block w-100"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span></button>
+                  </div>
+                  <p class="mt-3">Piezas de gran tamaño y alta precisión.</p>
                 </div>
               </div>
             </div>
@@ -123,16 +131,24 @@
           </div>
 
           <!-- Modal Trabajo 2 -->
-          <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+          <div class="modal fade" id="modal2" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-lg">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Piezas con tratamiento y gravado</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <div class="modal-header"><h5 class="modal-title">Tratamiento y grabado</h5>
+                  <button class="btn-close" data-bs-dismiss="modal"></button></div>
                 <div class="modal-body text-center">
-                  <img src="img/piezas/pavonado/p2.jpg" class="img-fluid rounded mb-3" alt="Trabajo 2">
-                  <p>Piezas con tratamiento y gravado dependiendo de las necesidades de nuestros clientes.</p>
+                  <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active"><img src="img/piezas/pavonado/p1.jpg" class="d-block w-100"></div>
+                      <div class="carousel-item"><img src="img/piezas/pavonado/p2.jpg" class="d-block w-100"></div>
+                      <div class="carousel-item"><img src="img/piezas/pavonado/" class="d-block w-100"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span></button>
+                  </div>
+                  <p class="mt-3">Piezas con pavonado y grabado láser.</p>
                 </div>
               </div>
             </div>
@@ -143,7 +159,7 @@
             <div class="card h-100 shadow-sm">
               <img src="img/piezas/pintura/pc3.jpg" class="card-img-top" alt="Trabajo 3">
               <div class="card-body text-center">
-                <h5 class="card-title">Piezas con pintura </h5>
+                <h5 class="card-title">Piezas con pintura y gravado</h5>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
                   Ver Descripción
                 </button>
@@ -152,49 +168,74 @@
           </div>
 
           <!-- Modal Trabajo 3 -->
-          <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Piezas con pintura </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                  <img src="img/piezas/pintura/pc8.jpg" class="img-fluid rounded mb-3" alt="Trabajo 3">
-                  <p>Piezas con pintura el cual se pinta dependiendo de la necesidad de nuestros clientes.</p>
+           <div class="modal fade" id="modal3" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header"><h5 class="modal-title">Pintura y grabado</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button></div>
+                  <div class="modal-body text-center">
+                    <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="img/piezas/pintura/pc3.jpg" class="d-block w-100"></div>
+                        <div class="carousel-item"><img src="img/piezas/pintura/pc4.jpg" class="d-block w-100"></div>
+                        <div class="carousel-item"><img src="img/piezas/pintura/pc5.jpg" class="d-block w-100"></div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span></button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span></button>
+                    </div>
+                    <p class="mt-3">Aplicación de pintura de alta durabilidad.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Trabajo 4: Series o lotes -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img src="img/piezas/lotes/pc6.jpg" class="card-img-top" alt="Lote de piezas">
-              <div class="card-body text-center">
-                <h5 class="card-title">Lotes de Piezas</h5>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
-                  Ver Descripción
-                </button>
+              <!-- === Lotes === -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="img/piezas/lotes/pc6.jpg" class="card-img-top" alt="Lote de piezas">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Lotes de Piezas</h5>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+                      Ver Descripción
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- Modal Trabajo 4 -->
-          <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Lotes de Piezas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                  <img src="img/piezas/lotes/pc7.jpg" class="img-fluid rounded mb-3" alt="Lotes de piezas">
-                  <p>Realizamos la fabricación en serie y lotes de piezas, según los requerimientos de nuestros clientes.</p>
+              <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Lotes de Piezas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+
+                      <div id="carouselLotes" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/piezas/lotes/pc6.jpg" class="d-block w-100" alt="Lote pieza 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/piezas/lotes/pc7.jpg" class="d-block w-100" alt="Lote pieza 2">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLotes" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselLotes" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
+
+                      <p class="mt-3">Realizamos la fabricación en serie y lotes de piezas, según los requerimientos de nuestros clientes.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+
 
           <!-- Trabajo 5: Dispositivos -->
           <div class="col-md-4">
@@ -217,9 +258,31 @@
                   <h5 class="modal-title">Dispositivos</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-center">
-                  <img src="img/piezas/" class="img-fluid rounded mb-3" alt="Dispositivos">
-                  <p>Realizamos la fabricación de dispositivos especializados según los requerimientos de nuestros clientes.</p>
+                <div class="modal-body">
+
+                  <div id="carouselDispositivos" class="carousel slide mb-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/piezas" class="d-block w-100" alt="Dispositivo 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/piezas" class="d-block w-100" alt="Dispositivo 2">
+                      </div>
+                      <!-- agrega más imágenes si las tienes -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDispositivos" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDispositivos" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+
+                  <p class="text-center">
+                    Fabricamos dispositivos especializados según los requerimientos de nuestros clientes.
+                  </p>
                 </div>
               </div>
             </div>
@@ -235,34 +298,59 @@
         <h2 class="text-center mb-5">Mantenimiento Realizado</h2>
         <div class="row g-4">
 
-          <!-- Mantenimiento 1 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img src="img/piezas/" class="card-img-top" alt="Mantenimiento 1">
-              <div class="card-body text-center">
-                <h5 class="card-title">Mantenimiento 1</h5>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalM1">
-                  Ver Descripción
-                </button>
-              </div>
-            </div>
-          </div>
+          <!-- === Mantenimiento === -->
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="img/" class="card-img-top" alt="Mantenimiento">
+    <div class="card-body text-center">
+      <h5 class="card-title">Mantenimiento</h5>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMantenimiento">
+        Ver Descripción
+      </button>
+    </div>
+  </div>
+</div>
 
-          <!-- Modal Mantenimiento 1 -->
-          <div class="modal fade" id="modalM1" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Mantenimiento 1</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                  <img src="img/piezas/" class="img-fluid rounded mb-3" alt="Mantenimiento 1">
-                  <p>Descripción completa del mantenimiento realizado (ejemplo: reparación de cilindro neumático).</p>
-                </div>
-              </div>
+<!-- Modal -->
+<div class="modal fade" id="modalMantenimiento" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Mantenimiento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+
+        <!-- Carrusel -->
+        <div id="carouselMantenimiento" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/" class="d-block w-100" alt="Mantenimiento 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/" class="d-block w-100" alt="Mantenimiento 2">
+            </div>
+            <div class="carousel-item"><img src="img/" class="d-block w-100" alt="Mantenimiento 3">
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMantenimiento" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMantenimiento" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <!-- Descripción -->
+        <p class="mt-3">
+          Ofrecemos mantenimiento preventivo y correctivo de maquinaria y equipo industrial, garantizando un funcionamiento óptimo y prolongando la vida útil de sus máquinas.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
         </div> 
       </div> 
@@ -274,10 +362,10 @@
         <h2 class="text-center mb-5">Diseño y programación</h2>
         <div class="row g-4">
 
-          <!-- Mastercam 1 -->
+          <!-- === Diseño y programación === -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
-              <img src="img/diseno/d1.jpg" class="card-img-top" alt="Mastercam 1">
+              <img src="img/diseno/d1.jpg" class="card-img-top" alt="Diseño 1">
               <div class="card-body text-center">
                 <h5 class="card-title">Diseño y programación</h5>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMC1">
@@ -287,36 +375,21 @@
             </div>
           </div>
 
-          <!-- Modal Mastercam 1 -->
           <div class="modal fade" id="modalMC1" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title">Diseño y programación</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body text-center">
-                  
-                  <!-- Carrusel dentro del modal -->
+
                   <div id="carouselMastercam" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <!-- Imagen 1 -->
-                      <div class="carousel-item active">
-                        <img src="img/diseno/d3.jpg" class="d-block w-100 rounded shadow" alt="Diseño 1">
-                        <p class="mt-2">Diseño y programación de pieza en 3D.</p>
-                      </div>
-                      <!-- Imagen 2 -->
-                      <div class="carousel-item">
-                        <img src="img/diseno/s2.jpg" class="d-block w-100 rounded shadow" alt="Diseño 2">
-                        <p class="mt-2">Simulación del mecanizado.</p>
-                      </div>
-                      <!-- Imagen 3 -->
-                      <div class="carousel-item">
-                        <img src="img/diseno/d1.jpg" class="d-block w-100 rounded shadow" alt="Diseño 3">
-                        <p class="mt-2">Resultado final de la pieza.</p>
-                      </div>
+                      <div class="carousel-item active"><img src="img/diseno/d3.jpg" class="d-block w-100" alt="Diseño 1"></div>
+                      <div class="carousel-item"><img src="img/diseno/s2.jpg" class="d-block w-100" alt="Diseño 2"></div>
+                      <div class="carousel-item"><img src="img/diseno/d1.jpg" class="d-block w-100" alt="Diseño 3"></div>
                     </div>
-                    <!-- Controles -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselMastercam" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon"></span>
                     </button>
@@ -324,11 +397,13 @@
                       <span class="carousel-control-next-icon"></span>
                     </button>
                   </div>
-                  
+
+                  <p class="mt-3">Diseño 3D, simulación de mecanizado y resultado final de la pieza.</p>
                 </div>
               </div>
             </div>
           </div>
+
 
 
         </div>

@@ -46,16 +46,27 @@ header .carousel-item img {
 header .carousel-caption {
   z-index: 2;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 header h1 {
   font-size: 3rem;
   color: #ffd700;
+  margin-bottom: 0.5rem;
 }
 
 header p.lead {
   font-size: 1.5rem;
   color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+header .carousel-caption p:not(.lead) {
+  color: #ddd;
+  font-size: 1.1rem;
 }
 
 /* =========================
@@ -65,6 +76,8 @@ header p.lead {
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s;
+  width: 100%;
+  height: auto;
 }
 
 #remembranza img:hover {
@@ -75,11 +88,13 @@ header p.lead {
   font-size: 2.5rem;
   font-weight: 800;
   color: #1a1a1a;
+  margin-bottom: 1rem;
 }
 
 #remembranza p {
   font-size: 1.1rem;
   line-height: 1.7;
+  color: #444;
 }
 
 /* =========================
@@ -96,6 +111,7 @@ header p.lead {
   border: none;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
 }
 
 #servicios .card:hover {
@@ -106,6 +122,8 @@ header p.lead {
 #servicios .btn-primary {
   background: linear-gradient(45deg, #ffd700, #ff8c00);
   border: none;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
 #servicios .btn-primary:hover {
@@ -126,6 +144,14 @@ header p.lead {
   margin-bottom: 0.7rem;
   font-size: 1.15rem;
   color: #444;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+#clientes ul li::before {
+  position: absolute;
+  left: 0;
+  color: #ffd700;
 }
 
 #carouselClientes .carousel-item img {
@@ -135,6 +161,7 @@ header p.lead {
   border-radius: 10px;
   background-color: #f8f9fa;
   transition: transform 0.3s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 #carouselClientes .carousel-item img:hover {
@@ -155,10 +182,34 @@ header p.lead {
   border: none;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+  height: 100%;
 }
 
 #objetivos .card:hover {
   transform: translateY(-5px);
+}
+
+#objetivos .card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#objetivos ul {
+  padding-left: 1rem;
+  text-align: left;
+  color: #444;
+}
+
+#objetivos ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+#objetivos ul li::before {
+  position: absolute;
+  left: 0;
+  color: #ffd700;
 }
 
 /* =========================
@@ -167,6 +218,8 @@ header p.lead {
 footer {
   background-color: #111;
   color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 footer h5 {
@@ -178,12 +231,14 @@ footer h5 {
 footer a {
   color: #fff;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 footer a:hover {
   color: #ffd700;
   text-decoration: underline;
 }
+
 footer .flex-fill {
   flex: 1 1 250px; /* columna mínima 250px, se expande */
 }
@@ -192,10 +247,15 @@ footer p, footer a {
   margin-bottom: 0.5rem;
 }
 
-
 /* =========================
    Responsivo
 ========================= */
+@media (max-width: 992px) {
+  #clientes .carousel-item img {
+    height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
@@ -211,5 +271,11 @@ footer p, footer a {
   }
   #carouselClientes .carousel-item img {
     height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  #clientes .carousel-item img {
+    height: 180px;
   }
 }
