@@ -1,0 +1,45 @@
+# Configuración de Netlify para VC Maquinados
+[build]
+  # No necesitamos build porque es HTML estático
+  publish = "."
+  
+[build.environment]
+  NODE_VERSION = "18"
+
+# Configuración de headers para mejor rendimiento
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache para imágenes (1 año)
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache para CSS y JS (1 año)
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redireccionamientos (opcional)
+[[redirects]]
+  from = "/equipos"
+  to = "/equipo_y_trabajos.html"
+  status = 301
+
+# Manejo de errores 404
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
