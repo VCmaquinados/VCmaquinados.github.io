@@ -119,16 +119,147 @@ header .carousel-caption p:not(.lead) {
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
-#servicios .btn-primary {
-  background: linear-gradient(45deg, #ffd700, #ff8c00);
-  border: none;
-  font-weight: 600;
-  transition: background 0.3s;
+
+
+
+.btn-primary {
+  background: linear-gradient(45deg, #ffd700, #ff8c00) !important;
+  border: none !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+  border-radius: 10px !important;
+  text-transform: uppercase !important;
+  transition: 0.3s !important;
 }
 
-#servicios .btn-primary:hover {
-  background: linear-gradient(45deg, #ff8c00, #ffd700);
+.btn-primary:hover {
+  background: linear-gradient(45deg, #ff8c00, #ffd700) !important;
+  color: #000 !important;
 }
+
+/* =========================
+   Sección Trabajos
+========================= */
+#trabajos {
+  background: #eeeef4;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#trabajos h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+/* Tarjetas */
+#trabajos .card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#trabajos .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.20);
+}
+
+
+
+/* Contenedor general del modal */
+.modal-dialog {
+  max-width: 900px !important; /* Modal más ancho y limpio */
+}
+
+.modal-content {
+  border-radius: 12px;
+  padding: 10px 0;
+  border: none;
+}
+
+/* Título centrado y más elegante */
+.modal-title {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0 10px;
+}
+
+/* Imagen centrada y adaptable */
+.modal-body img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Texto descriptivo centrado */
+.modal-description {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Botón cerrar más elegante */
+.btn-close {
+  filter: invert(50%);
+  opacity: 1;
+  margin: 8px;
+}
+
+
+/* Videos */
+.carousel-item video {
+  width: 100%;
+  max-height: 65vh;
+  border-radius: 10px;
+  background: #000;
+}
+
+/* Flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(86%) sepia(61%) saturate(859%) hue-rotate(9deg) brightness(98%) contrast(103%);
+}
+
+/* Miniaturas */
+.carousel-indicators {
+  position: static;
+  margin-top: 15px;
+}
+
+.carousel-indicators button {
+  width: 100px;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  margin: 3px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.carousel-indicators button img,
+.carousel-indicators button video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-indicators .active {
+  border: 3px solid #ffd700;
+  opacity: 1;
+}
+
+.carousel-indicators button:not(.active) {
+  opacity: 0.6;
+}
+
+
 
 /* =========================
    Sección Clientes
